@@ -1,0 +1,49 @@
+const express = require("express")
+  const user = await User.findOne({ email })
+
+  if (!user) return res.status(404).json({ message: "User not found" })
+
+  const validPassword = await bcrypt.compare(password, user.password)
+
+  if (!validPassword) return res.status(401).json({ message: "Invalid password" })
+
+  const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET)
+
+  res.json({ token })
+
+}const Habit = require("../models/Habit")
+
+exports.getHabits = async (req, res) => {
+
+  const habits = await Habit.find()
+
+  res.json(habits)
+
+}
+
+exports.createHabit = async (req, res) => {
+
+  const { name, userId } = req.body
+
+  const habit = new Habit({
+    name,
+    userId
+  })
+
+  await habit.save()
+
+  res.json(habit)
+
+}const router = require("express").Router()
+const { register, login } = require("../controllers/authController")
+
+router.post("/register", register)
+router.post("/login", login)
+
+module.exports = routerconst router = require("express").Router()
+const { getHabits, createHabit } = require("../controllers/habitController")
+
+router.get("/", getHabits)
+router.post("/", createHabit)
+
+module.exports = router
