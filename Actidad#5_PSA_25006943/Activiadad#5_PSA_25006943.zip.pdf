@@ -1,0 +1,73 @@
+{
+  "type": "Compass Connections",
+  "version": {
+    "$numberInt": "1"
+  },
+  "connections": [
+    {
+      "id": "23570620-9ccf-4272-990e-15f43d2c53d9",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1773121126305"
+        }
+      },
+      "favorite": {
+        "name": "nwt"
+      },
+      "savedConnectionType": "recent",
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {}
+      }
+    },
+    {
+      "id": "7b5e4238-61c3-4c5e-ab4f-acc872a5a5ab",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1773121129055"
+        }
+      },
+      "favorite": {
+        "name": "Actividad#3"
+      },
+      "savedConnectionType": "recent",
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {}
+      }
+    },
+    {
+      "id": "a4cdf304-214f-4fd4-a534-f67bc71b2fbc",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1774331114388"
+        }
+      },
+      "favorite": {
+        "name": "SeguridadDB."
+      },
+      "savedConnectionType": "recent",
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {}
+      }
+    },
+    {
+      "id": "e1d5dd06-84b4-43fe-829c-b0c80a20dfa6",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1774332247306"
+        }
+      },
+      "favorite": {
+        "name": "Actividad#5",
+        "color": "color3"
+      },
+      "savedConnectionType": "recent",
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {}
+      }
+    }
+  ]
+}
